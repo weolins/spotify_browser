@@ -16,7 +16,7 @@ def songsearch(token_h):
     for i in output['tracks']['items']:
         print(f"{n}.{i['name']} by {i['artists'][0]['name']} ({helper.timer(i['duration_ms'])}) with {i['popularity']}% popularity.")
         n+=1
-        surls.append(i['external_urls']['spotify'])
+        surls.append(i['uri'])
         
     helper.asker(surls, "S")
     

@@ -29,10 +29,12 @@ def player(urlss, type):
     
     if type == 'S':
         slist = ["1","2","3","4","5"]
+        msg = "1-5"
     else: 
         slist = ["1","2","3","4","5","6","7","8","9","10"]
+        msg = "1-10"
 
-    print("\nWhich song do you want to play?(1-5) Enter E to exit.")
+    print(f"\nWhich song do you want to play?({msg}) Enter E to exit.")
     console = input("> ")
         
     while console != 'E':

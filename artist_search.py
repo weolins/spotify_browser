@@ -14,7 +14,7 @@ def top_tracks (token_h, id):
         time = helper.timer(i['duration_ms'])
         print (f"{n}. {i['name']}: {time} from {i['album']['name']} with {i['popularity']}% popularity.")
         n = n+1
-        surls.append(i['external_urls']['spotify'])
+        surls.append(i['uri'])
 
     helper.asker(surls, "A")
     
